@@ -1,6 +1,7 @@
 import React, { Fragment, Component } from "react";
 import Spinner from "../layout/Spinner";
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 
 export class User extends Component {
   componentDidMount() {
