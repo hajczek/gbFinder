@@ -36,6 +36,8 @@ class App extends Component {
     this.setState({ users: res.data.items, loading: false });
   };
 
+  // Get single Github User
+
   // Clear users from state
   clearUsers = () => this.setState({ users: [], loading: false });
 
