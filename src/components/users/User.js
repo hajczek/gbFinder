@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Fragment, Component } from "react";
 import Spinner from "../layout/Spinner";
 import PropTypes from "prop-types";
 
@@ -33,7 +33,9 @@ export class User extends Component {
 
     const { loading } = this.props;
 
-    return <div>{name}</div>;
+    if (loading) return Spinner;
+
+    return <Fragment>{name}</Fragment>;
   }
 }
 
