@@ -13,18 +13,17 @@ export class User extends Component {
     loading: PropTypes.bool.isRequired,
     user: PropTypes.object.isRequired,
     getUser: PropTypes.func.isRequired,
+    getUserRepos: PropTypes.func.isRequired,
   };
 
   render() {
     const {
       name,
       avatar_url,
-      url,
       location,
       bio,
       blog,
       company,
-      website,
       login,
       html_url,
       followers,
