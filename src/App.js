@@ -13,9 +13,9 @@ class App extends Component {
   state = {
     users: [],
     user: {},
+    repos: [],
     loading: false,
     alert: null,
-    repos: [],
   };
 
   // For display all users from api without search
@@ -101,6 +101,7 @@ class App extends Component {
                   <User
                     {...props}
                     getUser={this.getUser}
+                    getUserRepos={this.getUserRepos}
                     user={user}
                     loading={loading}
                   />
