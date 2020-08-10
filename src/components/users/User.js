@@ -36,7 +36,13 @@ export class User extends Component {
 
     if (loading) return Spinner;
 
-    return <Fragment>{name}</Fragment>;
+    return (
+      <Fragment>
+        <Link to="/" className="btn btn-light">
+          Back to search
+        </Link>
+      </Fragment>
+    );
   }
 }
 
