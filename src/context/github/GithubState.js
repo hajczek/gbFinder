@@ -38,6 +38,10 @@ const GithubState = (props) => {
         repos: state.repos,
         loading: state.loading,
       }}
-    ></GithubContext.Provider>
+    >
+      {props.children}
+    </GithubContext.Provider>
   );
 };
+
+export default GithubState;
