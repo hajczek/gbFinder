@@ -29,4 +29,15 @@ const GithubState = (props) => {
   // Clear users
 
   // Set Loading
+
+  return (
+    <GithubContext.Provider
+      value={{
+        users: state.user,
+        user: state.user,
+        repos: state.repos,
+        loading: state.loading,
+      }}
+    ></GithubContext.Provider>
+  );
 };
