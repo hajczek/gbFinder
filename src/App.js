@@ -69,7 +69,6 @@ const App = () => {
                 render={(props) => (
                   <User
                     {...props}
-                    getUser={getUser}
                     getUserRepos={getUserRepos}
                     user={user}
                     repos={repos}
