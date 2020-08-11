@@ -6,7 +6,6 @@ import Users from "./components/users/Users";
 import User from "./components/users/User";
 import Search from "./components/users/Search";
 import About from "./components/pages/About";
-import axios from "axios";
 import GithubState from "./context/github/GithubState";
 import "./App.css";
 
