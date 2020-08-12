@@ -35,7 +35,7 @@ const GithubState = (props) => {
   const searchUsers = async (text) => {
     setLoading();
     const res = await axios.get(
-      `https:/api.github.com/search/users?q=${text}&client_id=${githubClientId}&client_secret=${githubClientSecret}`
+      `https://api.github.com/search/users?q=${text}&client_id=${githubClientId}&client_secret=${githubClientSecret}`
     );
 
     dispatch({
@@ -48,7 +48,7 @@ const GithubState = (props) => {
   const getUser = async (username) => {
     setLoading();
     const res = await axios.get(
-      `https:/api.github.com/users/${username}?client_id=${githubClientId}&client_secret=${githubClientSecret}`
+      `https://api.github.com/users/${username}?client_id=${githubClientId}&client_secret=${githubClientSecret}`
     );
 
     dispatch({
@@ -61,7 +61,7 @@ const GithubState = (props) => {
   const getUserRepos = async (username) => {
     setLoading();
     const res = await axios.get(
-      `https:/api.github.com/users/${username}/repos?per_page=5&sort=created:asc&client_id=${githubClientId}&client_secret=${githubClientSecret}`
+      `https://api.github.com/users/${username}/repos?per_page=5&sort=created:asc&client_id=${githubClientId}&client_secret=${githubClientSecret}`
     );
 
     dispatch({
